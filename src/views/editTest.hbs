@@ -1,0 +1,121 @@
+{{#if tokenIsPresent}}
+<div class="container-fluid">
+    <h3 class="h1">Редактировать тест</h3>
+    <div class="form signup" id="formTestEdit">
+        <form action="/edit/{{id}}" method="post" enctype="multipart/form-data">
+            <div class="questonsFormEdit">
+                <div id="editContentList">
+                    <input type="hidden" name="id" value="{{id}}">
+                    <input type="hidden" name="userId" value="{{userId}}">
+                    <div class="editHeaderContent">
+                        <div class="editQuestonsImages">
+                            <img src="/{{test.images}}" alt="" srcset="">
+                        </div>
+                        <div class="editRadio">
+                            <div class="editRadioSpan">
+                                <div class="spanRadioDiv">
+                                    <input type="radio" name="visibility" value="приватный"><span>Приватный</span>
+                                    <div class="tooltip-toggle">
+                                        <img src="/chto-luchshe.jpg" alt="" class="tooltip-icon-edit">
+                                        <div class="tooltip-text">Приватный тест виден только вам и недоступен другим
+                                            пользователям.</div>
+                                    </div>
+                                </div>
+                                <div class="spanRadioDiv">
+                                    <input type="radio" name="visibility" value="публичный"><span>Публичный</span>
+                                    <div class="tooltip-toggle">
+                                        <img src="/chto-luchshe.jpg" alt="" class="tooltip-icon-edit">
+                                        <div class="tooltip-text">Публичный тест виден всем пользователям.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="nameEditForm">
+                        <h6>Название теста</h6>
+                        <input name="name" id="descriptionTextInput" value="{{test.name}}"></input>
+                        <h6>Описание теста</h6>
+                        <textarea name="description" id="descriptionTextArea" rows="3">{{test.description}}</textarea>
+                        <input type="file" name="image[]" id="imgCreateTest" multiple />
+                    </div>
+                </div>
+                <div class="editListTests">
+                    {{#if test.questions }}
+                    {{#each test.questions}}
+                    <div class="editQuestonsForm">
+                        <div class="editQuestonsHeader">
+                            <div class="editQuestonsImages">
+                                <img src="/{{image}}" alt="" srcset="">
+                            </div>
+
+                            <div class="editQuestonsContent">
+                                <h5>{{title}}</h5>
+                                <textarea name="questions[{{@index}}][question]"
+                                    class="questionsInputEdit">{{question}}</textarea>
+
+                                <input type="hidden" name="questions[{{@index}}][title]" class="questionsTitle"
+                                    value="{{title}}">
+                                <input type="hidden" name="index" class="questionsTitle" value="{{@index}}">
+                            </div>
+                        </div>
+                        <div class="spanRadioDiv">
+                            <span class="spanEdit">варианты ответов</span>
+                            <div class="tooltip-toggle">
+                                <img src="/chto-luchshe.jpg" alt="" class="tooltip-icon-edit">
+                                <div class="tooltip-text">Вы можете удалить предыдущие варианты и добавить новые</div>
+                            </div>
+                        </div>
+
+                        <button class="addTwoOptionsEditBtn" style="display: none;">Добавить два варианта </button>
+                        <div class="twoOptionsContentEdit"></div>
+                        <button class="addManyOptionsEditBtn" style="display: none;">Добавить много вариантов</button>
+                        <div class="manyOptionsContentEdit"></div>
+                        <div class="optionsContainer">
+                            {{#each twoOptions}}
+                            <div class="twoOptions">
+                                <input type="text" class="twoOptionsEdit" value="{{this}}" disabled>
+                            </div>
+                            {{/each}}
+                            {{#each manyOptions}}
+                            <div class="addAnswerDiv">
+                                <input type="text" class="manyOptionsEditHtml" value="{{this}}" disabled>
+                            </div>
+                            {{/each}}
+                            <button class="delleteEditOptionsBtn">Удалить вариант ответа</button>
+
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+                </div>
+            </div>
+            <button class="addEditListQuestionsForm">Добавить вопрос</button>
+            <div class="messageCreateFooter">
+                <div class="messageResultTestEdit">
+                    <h6>Вы можете изменить сообщения пользователю о результатах теста после прохождения</h6>
+                    <div class="divMessage">
+                        <p> Если 0%-30% правильных ответов:</p>
+                        <textarea name="testResult1" id="" rows="2">{{testResult1}}</textarea>
+                    </div>
+                    <div class="divMessage">
+                        <p>Если 31%-70% правильных ответов:</p>
+                        <textarea name="testResult2" id="" rows="2">{{testResult2}}</textarea>
+                    </div>
+                    <div class="divMessage">
+                        <p>Если 71%-100% правильных ответов:</p>
+                        <textarea name="testResult3" id="" rows="2">{{testResult3}}</textarea>
+                    </div>
+                </div>
+                <div class="submitInput">
+
+                    <input type="submit" name="submit" class="submit" style="display: none;" value="Сохранить тест" />
+                </div>
+            </div>
+            <div class="submitInput">
+                <input type="submit" name="submit" class="submit" />
+            </div>
+        </form>
+    </div>
+</div>
+
+{{/if}}

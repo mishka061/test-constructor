@@ -1,0 +1,72 @@
+<div class="container-fluid">
+    <div class="form signup" id="formTest">
+        <div class="paginationCreate"></div>
+        <form action="/test" method="post" enctype="multipart/form-data" id="myForm">
+            <div class="questonsFormAdd">
+            </div>
+            <div class="formContentHeader">
+                <div class="spanRadio">
+                    <div class="spanRadioDiv">
+                        <input type="radio" name="visibility" value="приватный"><span>Приватный</span>
+                        <div class="tooltip-toggle">
+                            <img src="/chto-luchshe.jpg" alt="" class="tooltip-icon">
+                            <div class="tooltip-text">Приватный тест виден только вам и недоступен другим
+                                пользователям.</div>
+                        </div>
+                    </div>
+                    <div class="spanRadioDiv">
+                        <input type="radio" name="visibility" value="публичный"><span>Публичный</span>
+                        <div class="tooltip-toggle">
+                            <img src="/chto-luchshe.jpg" alt="" class="tooltip-icon">
+                            <div class="tooltip-text">Публичный тест виден всем пользователям.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testFormName">
+                    <h6>название теста</h6>
+                    <input type="text" name="name" id="descriptionTextInput" />
+                    <h6>описание теста</h6>
+                    <textarea name="description" id="descriptionTextArea" cols="30" rows="3"></textarea>
+                    <input type="file" name="image[]" id="imgCreateTest" multiple />
+
+                </div>
+            </div>
+            <div class="createArrTests">
+            </div>
+            <div class="messageCreateFooter">
+                <div class="messageBtnContent" style="display: none;">
+
+                    <div class="tooltip-toggle" id="messageBtnTooltip">
+                        <p>Добавить сообщения пользователю</p>
+                        <img src="/chto-luchshe.jpg" alt="" class="tooltip-icon">
+                        <div class="tooltip-text">Вы можете добавить сообщения пользователю о результатах теста после
+                            прохождения</div>
+                    </div>
+                </div>
+                <div class="submitContent">
+                    <button class="messageCreateResult" style="display: none;">Добавить сообщения</button>
+                    <button class="addQuestionsFormBtn">Добавить вопрос</button>
+                </div>
+                <div class="messageResultTest" style="display: none;">
+                    <div class="divMessage">
+                        <p> Если 0%-30% правильных ответов:</p>
+                        <textarea name="testResult1" id="" rows="2"></textarea>
+                    </div>
+                    <div class="divMessage">
+                        <p>Если 31%-70% правильных ответов:</p>
+                        <textarea name="testResult2" id="" rows="2"></textarea>
+                    </div>
+                    <div class="divMessage">
+                        <p>Если 71%-100% правильных ответов:</p>
+                        <textarea name="testResult3" id="" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="submitInput">
+                    <input type="submit" name="submit" class="submit" style="display: none;" value="Сохранить тест"/>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+</div>

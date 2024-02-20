@@ -1,0 +1,86 @@
+/* главная */
+
+#allTestContent {
+  padding: 10px;
+  height: 300px;
+}
+
+#arrTestContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.allTestArr {
+  border: 2px solid rgb(112, 209, 112);
+  width: 400px;
+  max-height: 600px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  /* position: relative; */
+}
+
+.allTestTitle h6 {
+  border-bottom: 1px solid rgb(219, 216, 216);
+  padding-bottom: 10px;
+  text-align: start;
+}
+
+.textDescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 0 10px 0px;
+}
+.imgMain {
+  text-align: center;
+}
+.imgMain img {
+  max-width: 250px;
+  max-height: 180px;
+  border: 1px solid #bebdbd;
+}
+
+.mainBtnMenu {
+  width: 100%;
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+  padding: 2px;
+  border-color: green;
+}
+
+.mainBtnMenu:hover {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+.mainBtnMenu a {
+  text-decoration: none;
+}
+
+.allTestTitleBtn {
+  margin: 10px;
+  text-align: center;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.page-link {
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+  padding: 5px;
+  border-color: green;
+}

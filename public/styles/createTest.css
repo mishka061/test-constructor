@@ -1,0 +1,307 @@
+/* createTest */
+
+.formContentHeader,
+.questonsForm {
+  border: 2px solid rgb(112, 209, 112);
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formContentHeader {
+  padding-bottom: 10px;
+  margin: 40px 0;
+}
+.questonsForm {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#formTest {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.spanRadio {
+  border-bottom: 1px solid #c9c9c9;
+}
+.spanRadioDiv {
+  margin: 0 0 10px;
+  text-align: start;
+}
+.spanRadioDiv span {
+  padding: 0 5px;
+}
+.spanRadioDiv img ,
+.messageBtnContent img{
+  width: 14px;
+  height: 14px;
+  margin-bottom: 2px;
+}
+
+
+
+
+
+
+
+
+.tooltip-toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text,
+.tooltip-text-questions {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-toggle-questions:hover .tooltip-text-questions,
+.tooltip-toggle-questions:focus .tooltip-text-questions,
+.tooltip-toggle:hover .tooltip-text,
+.tooltip-toggle:focus .tooltip-text {
+  display: block;
+}
+.tooltip-toggle-questions {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+
+.custom-file-upload {
+  position: relative;
+  text-align: center;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+#imgCreateTest {
+  width: 100%;
+  padding: 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid rgb(102, 101, 101);
+  box-sizing: border-box;
+}
+
+.submitContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.messageCreateResult,
+.addQuestionsFormBtn{
+  width: 45%;
+}
+.addAnswerButton{
+  width: 45%;
+  margin-bottom: 5px;
+}
+
+
+#messageBtnTooltip{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+
+}
+
+#messageBtnTooltip p{
+  margin: 0 10px 0 0;
+}
+#messageBtnTooltip img{
+  margin-top: 5px;
+}
+
+
+
+.addQuestionsFormBtn,
+.messageCreateResult,
+.addManyOptionsBtn,
+.addTwoOptionsBtn,
+.addAnswerButton {
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+}
+
+.addManyOptionsBtn,
+.addTwoOptionsBtn {
+  width: 40%;
+  padding: 1px;
+  border-color: green;
+  margin-top: 5px;
+}
+.addQuestionsFormBtn:hover,
+.addManyOptionsBtn:hover,
+.addTwoOptionsBtn:hover,
+.messageCreateResult:hover,
+.custom-file-upload label:hover,
+.addAnswerButton:hover {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+.styleBtn {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+.testFormName h6 {
+  padding-top: 20px;
+}
+#descriptionTextInput,
+#descriptionTextArea {
+  width: 100%;
+  border-left: 1px solid #ece8e8;
+  border-top: 1px solid #ece8e8;
+  border-color: #ece8e8;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#descriptionTextInput {
+  height: auto;
+}
+#descriptionTextArea {
+  margin-bottom: 10px;
+}
+
+.questonsForm h4 {
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.tooltip-toggle-questions img {
+  width: 14px;
+  height: 14px;
+  margin: 7px;
+}
+.questionsInput {
+  width: 100%;
+  border-left: 1px solid #ece8e8;
+  border-top: 1px solid #ece8e8;
+  border-color: #ece8e8;
+  border-radius: 5px;
+  height: auto;
+  padding: 10px;
+}
+
+.custom-file-upload {
+  margin-top: 20px;
+}
+
+.deleteQuestionsBtn,
+#deleteTwoOptionsBtn {
+  border-color: red;
+  background: #f12711;
+  background: -webkit-linear-gradient(to left, #f12711, #f5af19);
+  background: linear-gradient(to left, #f12711, #f5af19);
+}
+.deleteQuestionsBtn {
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 2px;
+  width: 100%;
+}
+.deleteQuestionsBtn:hover,
+#deleteTwoOptionsBtn:hover {
+  color: white;
+  background: #f00000;
+  background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+  background: linear-gradient(to right, #f00000, #dc281e);
+}
+#deleteTwoOptionsBtn {
+  /* margin-left: 20%;
+  margin-right: auto; */
+  border-radius: 5px;
+  padding: 2px;
+  width: 40%;
+}
+
+#imgCreateTest,
+.submit,
+.paginationCreateBlock {
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffefba, #ffffff);
+  background: linear-gradient(to left, #ffefba, #ffffff);
+  border-radius: 5px;
+}
+
+#imgCreateTest:hover,
+.submit:hover {
+  background: #f19011;
+  background: -webkit-linear-gradient(to left, #f19011, #f1e641);
+  background: linear-gradient(to left, #f19011, #ebe840);
+}
+
+.submit {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.twoOptions1,
+.twoOptions2 {
+  width: 90%;
+  padding: 2px;
+  border-radius: 5px;
+
+  border: 2px solid rgb(112, 209, 112);
+  margin-bottom: 5px;
+}
+.deleteManyOptionsButton,
+.delManyOptButton {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+.addAnswerButton {
+  padding: 2px;
+}
+
+.manyOptions {
+  width: 90%;
+  padding: 2px;
+  border-radius: 5px;
+  border: 2px solid rgb(112, 209, 112);
+  margin-bottom: 5px;
+}
+
+.paginationCreate {
+  display: flex;
+}
+
+.page-link-create {
+  display: flex;
+}
+
+.paginationCreateBlock {
+  padding: 5px;
+  text-align: center;
+  margin: 2px;
+}

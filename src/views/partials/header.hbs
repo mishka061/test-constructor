@@ -1,0 +1,44 @@
+{{#if tokenIsPresent}}
+<div class="container-fluid" id="testHeaderTokken">
+    <div class="headerLogo">
+        <a href="/"><img src="/4616878.png" alt=""></a>
+        <h6>Конструктор тестов</h6>
+    </div>
+    <div class="headerTokkenMenu">
+        <button class="headerBtnCreate">
+            <a href="/test">Создай свой тест</a>
+        </button>
+        <button class="headerBtnProfile">
+            <a href="/profile/${login}">мои тесты</a>
+        </button>
+    </div>
+    <div class="headerTokkenExit">
+        <button class="headerBtn">
+            <a href="/" class="exitToken">Выйти</a>
+        </button>
+    </div>
+</div>
+
+</div>
+{{else}}
+<div class="testHeaderRegistr">
+    <div class="container-fluid" id="headerContent">
+        <div class="headerLogo">
+            <a href="/"><img src="/4616878.png" alt=""></a>
+            <h6>Конструктор тестов</h6>
+        </div>
+        <div class="headerMenu">
+            <button class="headerBtnMenu"><a href="/test">Создай свой тест</a></button>
+        </div>
+        <div class="headerRegistr">
+            <button class="headerBtnMenu">
+                <a href="/authorization">Вход</a>
+            </button>
+            <button class="headerBtnMenu">
+                <a href="/registration">Регистрация</a>
+            </button>
+
+        </div>
+    </div>
+</div>
+{{/if}}

@@ -1,0 +1,63 @@
+/* profile */
+
+#arrProfileContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 20px;
+}
+.allTestProfile {
+  border: 2px solid rgb(112, 209, 112);
+  background-color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.allTestProfileTitle p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+.allTestProfileImg {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.allTestProfileImg img {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #bebdbd;
+}
+
+.allTestProfileBtn {
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+  padding: 2px 5px;
+  border-color: green;
+}
+.allTestProfileBtn:hover {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+.allTestProfileBtn a {
+  text-decoration: none;
+  color: green;
+}
+
+.profileBtn {
+  display: flex;
+  justify-content: space-between;
+}

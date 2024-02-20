@@ -1,0 +1,22 @@
+<div class="container-fluid" id="testArrContainer">
+    <div class="form signup" id="arrTestContent">
+        {{#each arrTest}}
+        <div class="allTestArr">
+            <div id="allTestContent">
+                <div class="allTestTitle">
+                    <h6>{{name}}</h6>
+                    <div class="textDescription">{{description}}</div>
+                </div>
+                <div class="imgMain">
+                    <img src="{{images}}" alt="" srcset="">
+                </div>
+            </div>
+            <div class="allTestTitleBtn">
+                <button class="mainBtnMenu"><a href="/takeTest/{{_id}}">Пройти тест</a></button>
+
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="pagination"></div>
+</div>

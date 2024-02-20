@@ -1,0 +1,63 @@
+<div class="container-registration">
+  <h2>Регистрация</h2>
+  <form class="form-signap" action=" " method="post">
+    <div class="content-registration">
+      <div class="registration-colom">
+        <div class="input-box">
+          <span class="details">Электронная почта</span>
+          <input type="email" id="emailInput" name="email" class="form-control" autocomplete="email" required />
+
+        </div>
+        <div class="input-box">
+          <span class="details">логин</span>
+          <input type="text" id="loginInput" class="form-control" name="login" autocomplete="login" minlength="3"
+            maxlength="20" required />
+        </div>
+      </div>
+      <div class="registration-colom">
+        <div class="input-box">
+          <span class="details">пароль</span>
+          <div class="password-toggle">
+            <input type="password" id="passwordInput" name="password" class="form-control password-input"
+              autocomplete="new-password" required />
+            <label class="show-password-label">
+              <input type="checkbox" class="password-checkbox" id="passwordCheckbox1">
+              Показать пароль
+            </label>
+
+          </div>
+        </div>
+        <div class="input-box">
+          <span class="details">повторите пароль</span>
+          <div class="password-toggle">
+            <input type="password" id="confirmPasswordInput" name="confirm-password"
+              class="form-control confirm-password-input" autocomplete="new-password" required />
+            <label class="show-password-label">
+              <input type="checkbox" class="password-checkbox" id="passwordCheckbox2">
+              Показать пароль
+            </label>
+
+          </div>
+          <div class="error-message" id="confirmPasswordError">Пароли не совпадают</div>
+        </div>
+      </div>
+    </div>
+    <div class="messageError">
+      {{#if errorLoginEndEmail}}
+      <div class="errorLoginEndEmail">{{errorLoginEndEmail}}</div>
+      {{else}}
+      {{#if errorEmail}}
+      <div class="errorEmail">{{errorEmail}}</div>
+      {{else}}
+      {{#if errorLogin}}
+      <div class="errorLogin">{{errorLogin}}</div>
+      {{/if}}
+      {{/if}}
+      {{/if}}
+    </div>
+    <div class="button">
+      <input type="submit" name="submit" value="Зарегистрироваться">
+    </div>
+  </form>
+  <p class="message">Уже есть учетная запись? <a href="/authorization">Войти</a></p>
+</div>

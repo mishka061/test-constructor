@@ -1,0 +1,126 @@
+/* takeTest */
+
+.takeTestTitle {
+  margin: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.takeTestImg {
+  text-align: center;
+}
+
+.takeTestImg img {
+  object-fit: cover;
+  width: 250px;
+  height: 180px;
+  border: 1px solid #bebdbd;
+}
+
+.conteinerTests {
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.imgTakeTest img {
+  object-fit: cover;
+  width: 250px;
+  height: 180px;
+  border: 1px solid #bebdbd;
+  margin: 10px 0;
+}
+
+.takeQuestionsTestBtn {
+  width: 100%;
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+  padding: 5px;
+  border-color: green;
+  margin: 5px 0;
+  text-align: start;
+}
+.takeQuestionsTestBtn:hover {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+
+
+#resultForm {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffefba,
+    #ffffff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffefba, #ffffff);
+  margin-top: 40px;
+}
+#resultForm:hover {
+  background: #f19011; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f19011,
+    #f1e641
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f19011, #ebe840);
+}
+
+.testResult {
+  height: 300px;
+}
+.resultQuestion {
+  padding-top: 10px;
+}
+.TakeTestAgain {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffefba,
+    #ffffff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffefba, #ffffff);
+  margin-top: 40px;
+}
+.TakeTestAgain:hover {
+  background: #f19011; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f19011,
+    #f1e641
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f19011, #ebe840);
+}
+.TakeTestAgain a {
+  text-decoration: none;
+  color: #000;
+}
+.seeResult img {
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+<div class="container-fluid" id="testArrProfileContent">
+    <div id="arrProfileContent">
+        {{#each arrTest}}
+        <div class="allTestProfile">
+            <div class="allTestProfileTitle">
+                <div class="allTestProfileImg">
+                    <img src="/{{images}}" alt="">
+                </div>
+                <h6>{{name}}</h6>
+                <p>{{description}}</p>
+            </div>
+
+            <div class="profileBtn">
+                <button class="allTestProfileBtn"><a href="/takeTest/{{_id}}">Пройти тест</a></button>
+                <button class="allTestProfileBtn"><a href="/edit/{{_id}}">Редактировать тест</a></button>
+                <button class="allTestProfileBtn"><a href="/delete/{{_id}}">Удалить тест</a></button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

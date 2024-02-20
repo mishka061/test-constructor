@@ -1,0 +1,54 @@
+<div class="container-fluid" id="testArrContainer">
+    <div class="form signup" id="arrTestContentTake">
+        <div class="takeTest">
+            <div class="conteinerTests">
+                <div class="paginationTest"></div>
+                <form action="/takeTest/{{id}}" method="post">
+                    {{#each test.questions}}
+                    <div class="testConteiner">
+                        <h5>{{title}}</h5>
+                        <div class="imgTakeTest">
+                            <img src="/{{image}}" alt="">
+                        </div>
+                        <h4 class="questionTakeTest">{{question}}</h4>
+                        <h6 class="questionTakeTestP">Варианты ответов:</h6>
+                        {{#if twoOptions}}
+                        {{#each twoOptions}}
+
+                        <div class="twoOptionsTest"><input type="button" class="takeQuestionsTestBtn" id="questionTakeOptionBtn"
+                                value="{{this}}"></input></div>
+
+                        {{/each}}
+                        {{else}}
+                        {{#each manyOptions}}
+                        <div class="manyOptionsTest"><input type="button" class="takeQuestionsTestBtn" id="questionBtn"
+                                value="{{this}}"></input></div>
+                        {{/each}}
+                        {{/if}}
+                    </div>
+                    {{/each}}
+                    <div class="seeResult" style="display: none;">
+                        <img src="/ocr.jpg" alt="">
+                        <input type="hidden" id="arrResponseSubmit" name="arrResponse">
+                        <input type="hidden" name="checkingResponses" value="{{test.checkingResponses}}">
+                        <input type="hidden" name="testResult1" value="{{testResult1}}">
+                        <input type="hidden" name="testResult2" value="{{testResult2}}">
+                        <input type="hidden" name="testResult3" value="{{testResult3}}">
+                        <input type="hidden" name="id" value="{{id}}">
+                        <input type="submit" name="submit" class="submit" id="resultForm" value="посмотреть результат">
+                    </div>
+                    {{#if result}}
+                    <div class="testResult">
+                        <h4>Результат теста: </h4>
+                        <div class="resultQuestion">{{result}}</div>
+                    </div>
+                    <button class="TakeTestAgain" data-id="{{id}}">Пройти тест
+                        заново</button>
+                    {{/if}}
+            </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,221 @@
+/* edit */
+
+.h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+#formTestEdit {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+#editContentList,
+.editQuestonsForm,
+.messageResultTestEdit {
+  background-color: #ffffffce;
+  border: 2px solid rgb(112, 209, 112);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.messageResultTestEdit {
+  margin-top: 20px;
+}
+.questionsInputEdit {
+  width: 100%;
+  border-left: 1px solid #ece8e8;
+  border-top: 1px solid #ece8e8;
+  border-color: #ece8e8;
+  border-radius: 5px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.editHeaderContent {
+  display: flex;
+  flex-direction: row;
+}
+.nameEditForm h6{
+  margin-top: 20px;
+}
+
+.editRadio {
+  width: 60%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+.editRadioSpan {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.editQuestonsForm {
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+
+.spanEdit {
+  font-size: 18px;
+}
+.delEditListBtn,
+.delleteEditOptionsBtn {
+  border-color: red;
+  background: #f12711;
+  background: -webkit-linear-gradient(to left, #f12711, #f5af19);
+  background: linear-gradient(to left, #f12711, #f5af19);
+  border-radius: 5px;
+  padding: 2px;
+}
+.delEditListBtn {
+  margin-top: 10px;
+  width: 100%;
+}
+.delEditListBtn:hover,
+.delleteEditOptionsBtn:hover {
+  color: white;
+  background: #f00000;
+  background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+  background: linear-gradient(to right, #f00000, #dc281e);
+}
+.delEditListBtn a,
+.delleteEditOptionsBtn a {
+  text-decoration: none;
+  color: #000;
+}
+.delleteEditOptionsBtn {
+  width: 40%;
+  margin: 10px 0;
+}
+
+.addManyOptionsEditBtn,
+.addTwoOptionsEditBtn{
+  margin-top: 5px;
+
+}
+.addEditListQuestionsForm{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.addEditListQuestionsForm,
+.addTwoOptionsEditBtn,
+.addEditAnswerBtn {
+  width: 45%;
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+  padding: 2px;
+  border-color: green;
+
+}
+.addManyOptionsEditBtn{
+  width: 45%;
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #a1ffce, #faffd1);
+  background: linear-gradient(to left, #a1ffce, #faffd1);
+  border-radius: 5px;
+  padding: 2px;
+  border-color: green;
+}
+.addEditListQuestionsForm:hover ,
+.addTwoOptionsEditBtn:hover,
+.addManyOptionsEditBtn:hover,
+.addEditAnswerBtn:hover{
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+  background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+.editQuestonsContent h5 {
+  text-align: center;
+}
+
+
+.manyOptionsEditHtml,
+.twoOptionsEdit {
+  width: 100%;
+  border: 2px solid rgb(112, 209, 112);
+  padding: 2px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.twoOptionsEdit1 {
+  width: 95%;
+  border: 2px solid rgb(112, 209, 112);
+  padding: 2px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.editQuestonsHeader {
+  display: flex;
+  flex-direction: row;
+}
+.editQuestonsContent {
+  width: 60%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.editQuestonsImages img {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #bebdbd;
+}
+.manyOptionsEdit {
+  width: 90%;
+  border: 2px solid rgb(112, 209, 112);
+  padding: 2px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.delManyEditOptButton {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+}
+
+.divMessage textarea {
+  width: 100%;
+}
+
+
+
+
+
+.addEditAnswerBtn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
